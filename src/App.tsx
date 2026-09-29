@@ -779,37 +779,6 @@ export default function App() {
               <span>Print Page</span>
             </button>
 
-            {/* Direct Vector PDF Download Button */}
-            <button
-              onClick={handleDownloadPdf}
-              disabled={isProcessing}
-              className="bg-slate-800 hover:bg-slate-900 active:bg-black text-white font-medium text-sm px-3 py-2 rounded-lg shadow-sm flex items-center space-x-1.5 cursor-pointer transition-colors disabled:opacity-50"
-              title="Download vector PDF directly"
-            >
-              {isProcessing ? (
-                <>
-                  <Loader2 className="w-4 h-4 animate-spin" />
-                  <span className="hidden sm:inline">Saving...</span>
-                </>
-              ) : (
-                <>
-                  <Download className="w-4 h-4 text-slate-300" />
-                  <span className="hidden sm:inline">Save PDF</span>
-                </>
-              )}
-            </button>
-
-            {/* Open in Full Window for Direct Native Browser Printing */}
-            <a
-              href={window.location.href}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hidden lg:flex items-center space-x-1 text-xs text-slate-500 hover:text-slate-800 bg-slate-50 hover:bg-slate-100 border border-slate-200 px-2 py-2 rounded-lg transition-colors cursor-pointer"
-              title="Open full page in new tab for standard browser printer dialog"
-            >
-              <ExternalLink className="w-3.5 h-3.5" />
-              <span>Full Tab</span>
-            </a>
           </div>
         </div>
 
