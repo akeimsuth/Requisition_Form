@@ -1,0 +1,6 @@
+{
+  "name": "Sequential Petty Cash Requisition Printer",
+  "description": "Automated incremental serial numbering utility and batch print manager for North Beech Ltd Petty Cash Requisition forms.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
